@@ -1,8 +1,8 @@
 /*Harjoitus 5
 Sami Liimatainen
 IIO14S1
-9.9.2014
-Versio 1.0
+16.9.2014
+Versio 1.1
 
 a) Kirjoita, tallenna ja suorita ym. ohjelma.
 b) Kommentoi ylla olevan esimerkin kaikki rivit (mitä rivillä tapahtuu).
@@ -38,16 +38,17 @@ void main() //pääohjelman määrittely aaltosulkujen sisällä
 	cin >> luku2; //käyttäjä syöttää arvon luku2:lle, character in
 	Laske(luku1, luku2); //Kutsutaan aliohjelma Laske
 
-	if
-		(MINIMI < summa < MAKSIMI)
+	if (MINIMI < summa && summa < MAKSIMI)
+	{
 		cout << "Summa on lukujen " << MINIMI;
 		cout << " ja " << MAKSIMI;
 		cout << " välissä\n";
+	}
 
 	if (summa < MINIMI) //jos luku1 + luku2 on suurempi kuin MAX niin toteutetaan seuraava rivi
 		cout << "Summa on pienempi kuin " << MINIMI; //jos yllä oleva summa on pienempi kuin 10 tulostetaan tämä
 	else
-		cout << "Summa on suurempi kuin " << MINIMI;//jos yllä oleva summa on suurempi kuin 10 tulostetaan tämä
+		cout << "Summa on suurempi kuin " << MINIMI; //jos yllä oleva summa on suurempi kuin 10 tulostetaan tämä
 
 	if
 		(summa < MAKSIMI) //jos luku1 + luku2 on suurempi kuin max niin toteutetaan seuraava rivi
@@ -59,5 +60,5 @@ void main() //pääohjelman määrittely aaltosulkujen sisällä
 //aliohjelman määritys
 void Laske(int eka, int toka)
 {
-	summa = eka + toka; //summan arvo laskettan eka + toka
+	summa = eka + toka; //summan arvo lasketaan eka + toka
 }
